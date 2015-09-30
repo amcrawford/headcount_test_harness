@@ -40,6 +40,6 @@ class TestHeadcountAnalyst < TestHarness
     ha = HeadcountAnalyst.new(repo)
     assert_equal false, ha.kindergarten_participation_correlates_with_high_school_graduation('CHERRY CREEK 5')
     assert_equal true, ha.kindergarten_participation_correlates_with_high_school_graduation('ARICKAREE R-2')
-    assert_equal false, ha.kindergarten_participation_correlates_with_high_school_graduation('COLORADO')
+    assert_equal true, ha.kindergarten_participation_correlates_with_high_school_graduation('COLORADO')
   end
 end
